@@ -65,32 +65,26 @@
           <ul>
             <li><a href="#hero" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#stats">Challenges</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#departments">Departments</a></li>
-            <li><a href="#doctors">Doctors</a></li>
-            <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="#workflow">Workflow</a></li>
+            <li class="dropdown"><a href="#"><span>Cases</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
+                <li><a href="#success">success stories</a></li>
+                  
+                    <li><a href="#testimonials2">testimonials</a></li>
+                    <li><a href="#future">Future DIRECTIONS</a></li>
+                    
+                  
                 </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
+                
               </ul>
             </li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact"></a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="cta-btn" href="index.html#appointment">Make an Appointment</a>
 
       </div>
 
@@ -106,28 +100,33 @@
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <img src="assets/img/hero-carousel/AdobeStock.jpeg" alt="">
           <div class="container">
-            <h2>Welcome to Medicio</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2>REDEFINING IN-OFFICE
+              MEDICATION DISPENSING</h2>
+            <p>Streamlining Care and Transforming Physician Practices</p>
             <a href="#about" class="btn-get-started">Read More</a>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <img src="assets/img/hero-carousel/Streamlining-patient-access-How.jpeg" alt="">
           <div class="container">
-            <h2>At vero eos et accusamus</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-            <a href="#about" class="btn-get-started">Read More</a>
+
+            <h2>REDEFINING IN-OFFICE
+              MEDICATION DISPENSING</h2>
+            <p>Streamlining Care and Transforming Physician Practices</p>
+                        <a href="#about" class="btn-get-started">Read More</a>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
           <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
           <div class="container">
-            <h2>Temporibus autem quibusdam</h2>
-            <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
+            <h2>REDEFINING IN-OFFICE
+              MEDICATION DISPENSING</h2>
+              <p>Streamlining Care and Transforming Physician Practices</p>
+
             <a href="#about" class="btn-get-started">Read More</a>
           </div>
         </div><!-- End Carousel Item -->
@@ -146,58 +145,157 @@
 
     </section><!-- /Hero Section -->
 
-    <!-- Featured Services Section -->
+    <style>/* Center the entire section */
+      #featured-services {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh; /* Full viewport height for centering */
+          text-align: center;
+          background-color: #f9f9f9; /* Optional background color */
+      }
+      
+      /* Center the container */
+      #featured-services .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap; /* Wrap items on smaller screens */
+          gap: 20px; /* Add spacing between items */
+      }
+      
+      /* Style individual service items */
+      .service-item {
+          background: #fff; /* White background for cards */
+          border-radius: 10px;
+          padding: 20px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          max-width: 300px; /* Limit card width */
+          text-align: center;
+      }
+      
+      .service-item:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+      
+      .service-item .icon {
+          font-size: 3rem;
+          color: #00bcd4; /* Teal color for icons */
+          margin-bottom: 10px;
+      }
+      
+      .service-item h4 {
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #333;
+          margin-bottom: 10px;
+      }
+      
+      .service-item p {
+          font-size: 1rem;
+          color: #555;
+          line-height: 1.6;
+      }
+      </style>
+
     <section id="featured-services" class="featured-services section">
-
       <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item position-relative">
+          <div class="service-item">
               <div class="icon">
-<i class="fas fa-pills icon"></i></div>
+                  <i class="fas fa-pills icon"></i>
+              </div>
               <h4><a href="stream.html" class="stretched-link">Streamlined Patient Care</a></h4>
               <p>Delivering innovative solutions for in-office medication dispensing, enhancing
-                patient outcomes, and practice efficiency.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item position-relative">
+                  patient outcomes, and practice efficiency.</p>
+          </div>
+  
+          <div class="service-item">
               <div class="icon">
-              <i class="fas fa-lightbulb icon"></i></div>
+                  <i class="fas fa-lightbulb icon"></i>
+              </div>
               <h4><a href="" class="stretched-link">Expert-Led Solutions</a></h4>
               <p>Leverage expertise in specialty medications, white bagging, brown bagging, and
-                billing to optimize workflows and drive results.</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item position-relative">
+                  billing to optimize workflows and drive results.</p>
+          </div>
+  
+          <div class="service-item">
               <div class="icon">
-                <i class="fas fa-hospital-user icon"></i></div>
+                  <i class="fas fa-hospital-user icon"></i>
+              </div>
               <h4><a href="" class="stretched-link">Transforming Practices</a></h4>
               <p>Delivering innovative solutions for in-office medication dispensing, enhancing
-                patient outcomes and operational efficiency.</p>
-            </div>
-          </div><!-- End Service Item -->
-<!--not used
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon"><i class="fas fa-dna icon"></i></div>
-              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
+                  patient outcomes and operational efficiency.</p>
           </div>
-        -->
-          <!-- End Service Item -->
-
-        </div>
-
       </div>
+  </section>
 
-    </section><!-- /Featured Services Section -->
+
+
+<!--The EssentialRx Solution:-->
+
+  <section id="solution" class="solution section" style="background-color: #edf1f5; color: #fff; padding: 50px 0; position: relative; height: 800px;">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 style="text-transform: uppercase; margin-bottom: 30px; color: #303030;">The EssentialRx Solution: Streamlining Care</h2>
+    </div>
+  
+    <div class="container" style="position: relative; height: 100%; display: flex; align-items: center; justify-content: center;">
+      <!-- Central Image and Circle -->
+      <div style="position: relative; z-index: 1;">
+        <div style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 400px;
+          height: 400px;
+          border: 2px solid #161414;
+          border-radius: 50%;
+          z-index: 0;">
+        </div>
+        <img src="assets/img/solutions.png" alt="Central Phone" style="max-width: 300px;height: 411px; z-index: 1; position: relative;">
+      </div>
+  
+      <!-- Features Around the Circle -->
+      <!-- Top Left -->
+      <div style="position: absolute; top: 10%; left: 10%; max-width: 300px; text-align: center;">
+        <h4 style="color: #201f22; margin-bottom: 10px;">Workflow Automation</h4>
+        <p style="color: #565558; word-wrap: break-word; overflow-wrap: break-word; margin: 0;">
+          Automate processes to save time and reduce errors.
+        </p>
+      </div>
+  
+      <!-- Top Right -->
+      <div style="position: absolute; top: 10%; right: 10%; max-width: 300px; text-align: center;">
+        <h4 style="color: #201f22; margin-bottom: 10px;">Insurance Expertise</h4>
+        <p style="color: #565558; word-wrap: break-word; overflow-wrap: break-word; margin: 0;">
+          Navigate complex payer requirements, including Medicare Part B.
+        </p>
+      </div>
+  
+      <!-- Bottom Left -->
+      <div style="position: absolute; bottom: 10%; left: 10%; max-width: 300px; text-align: center;">
+        <h4 style="color: #201f22; margin-bottom: 10px;">Enhanced Patient Care</h4>
+        <p style="color: #565558; word-wrap: break-word; overflow-wrap: break-word; margin: 0;">
+          Improve adherence and outcomes with immediate medication access.
+        </p>
+      </div>
+  
+      <!-- Bottom Right -->
+      <div style="position: absolute; bottom: 10%; right: 10%; max-width: 300px; text-align: center;">
+        <h4 style="color: #201f22; margin-bottom: 10px;">Streamlined In-Office Dispensing</h4>
+        <p style="color: #565558; word-wrap: break-word; overflow-wrap: break-word; margin: 0;">
+          Ensure patients receive medications conveniently without delays, reducing barriers to adherence.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
 
     <!DOCTYPE html>
     <html lang="en">
@@ -261,78 +359,16 @@
     </head>
     
 
-
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section accent-background">
-
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>In an emergency? Need help now?</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#appointment">Make an Appointment</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Call To Action Section -->
-
    
-<!-- About Section -->
-<section id="about" class="about section">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>About Us</h2>
-    <p>Collaborating with Practices to Transform Care</p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-
-    <div class="row gy-4">
-      <!-- Image and Video -->
-      <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/img/about.jpg" class="img-fluid" alt="">
-        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
-      </div>
-
-      <!-- Content -->
-      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-        <h3>Empowering Practices, Improving Patient Outcomes</h3>
-        <p class="fst-italic">
-          We empower physician practices to implement seamless in-office dispensing solutions tailored to their needs.
-        </p>
-        <ul>
-          <li><i class="bi bi-check2-all"></i> <span>Advancing Patient Outcomes</span></li>
-          <p>Our solutions improve adherence, streamline care, and optimize practice efficiency.</p>
-          <li><i class="bi bi-check2-all"></i> <span>A Leader in Medication Dispensing</span></li>
-          <p>We bring unmatched experience in specialty medications, infusion services, in-office dispensing, and automation-driven workflows.</p>
-          <li><i class="bi bi-check2-all"></i> <span>Streamlined Workflow Solutions</span></li>
-          <p>Driving operational efficiency through automation, customized dispensing workflows, and seamless integration with practice management systems.</p>
-          <li><i class="bi bi-check2-all"></i> <span>Navigating Complex Payer Systems</span></li>
-          <p>Expertise in billing, authorizations, appeals, and Medicare Part B navigation to maximize reimbursement.</p>
-        </ul>
-        <p>
-          By empowering practices and transforming care delivery, we aim to enhance patient outcomes and improve operational workflows.
-        </p>
-      </div>
-    </div>
-
-  </div>
-
-</section><!-- /About Section -->
-
 
 <!-- Features Section -->
-<section id="features" class="features section">
+<section id="about" class="features section">
 
   <div class="container">
 
     <div class="row justify-content-around gy-4">
       <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/img/features.jpg" alt="">
+        <img src="assets/img/about-section.jpg" alt="">
       </div>
 
       <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
@@ -416,6 +452,7 @@
   }</style>
     
 
+
     <section id="stats" class="stats section" style="background-color: #f8f9fa; color: #fff; padding: 50px 0;">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -426,38 +463,100 @@
     
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
-          <a href="adherence.html" style="text-decoration: none;">
-
+          <!-- Card 1 -->
           <div class="col-lg-5 col-md-6">
-            <div class="stats-item d-flex align-items-center justify-content-center text-center w-100 h-100" style="background-color: #fff; padding: 20px; border-radius: 10px;">
-              <div>
-                <h3 style="font-size: 1.25rem; color: #121212;">Patient Non-Adherence</h3>
-                <p style="margin-top: 10px; color: #272727;">Over 50% of patients fail to fill or follow prescriptions.</p>
+            <a href="#non-adherence" style="text-decoration: none;">
+              <div class="stats-item d-flex align-items-center justify-content-center text-center w-100 h-100" style="background-color: #fff; padding: 20px; border-radius: 10px;">
+                <div>
+                  <h3 style="font-size: 1.25rem; color: #121212;">Patient Non-Adherence</h3>
+                  <p style="margin-top: 10px; color: #272727;">Over 50% of patients fail to fill or follow prescriptions.</p>
+                </div>
               </div>
-            </div>
             </a>
           </div>
+    
+          <!-- Card 2 -->
           <div class="col-lg-5 col-md-6">
-            <div class="stats-item d-flex align-items-center justify-content-center text-center w-100 h-100" style="background-color: #fff; padding: 20px; border-radius: 10px;">
-              <div>
-                <h3 style="font-size: 1.25rem; color: #121212;">Insurance Barriers</h3>
-                <p style="margin-top: 10px; color: #272727;">Complexities of Medicare Part B, prior authorizations, and appeals cause delays.</p>
+            <a href="#insurance" style="text-decoration: none;">
+              <div class="stats-item d-flex align-items-center justify-content-center text-center w-100 h-100" style="background-color: #fff; padding: 20px; border-radius: 10px;">
+                <div>
+                  <h3 style="font-size: 1.25rem; color: #121212;">Insurance Barriers</h3>
+                  <p style="margin-top: 10px; color: #272727;">Complexities of Medicare Part B, prior authorizations, and appeals cause delays.</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
+    
+          <!-- Card 3 -->
           <div class="col-lg-5 col-md-6">
-            <div class="stats-item d-flex align-items-center justify-content-center text-center w-100 h-100" style="background-color: #fff; padding: 20px; border-radius: 10px;">
-              <div>
-                <h3 style="font-size: 1.25rem; color: #121212;">Administrative Overload</h3>
-                <p style="margin-top: 10px; color: #272727;">Staff struggles with billing, tracking claims, and pharmacy coordination.</p>
+            <a href="#administrative" style="text-decoration: none;">
+              <div class="stats-item d-flex align-items-center justify-content-center text-center w-100 h-100" style="background-color: #fff; padding: 20px; border-radius: 10px;">
+                <div>
+                  <h3 style="font-size: 1.25rem; color: #121212;">Administrative Overload</h3>
+                  <p style="margin-top: 10px; color: #272727;">Staff struggles with billing, tracking claims, and pharmacy coordination.</p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
+    
+          <!-- Card 4 -->
           <div class="col-lg-5 col-md-6">
-            <div class="stats-item d-flex align-items-center justify-content-center text-center w-100 h-100" style="background-color: #fff; padding: 20px; border-radius: 10px;">
-              <div>
-                <h3 style="font-size: 1.25rem; color: #121212;">Lost Revenue</h3>
-                <p style="margin-top: 10px; color: #272727;">Practices miss opportunities for ancillary income.</p>
+            <a href="#revenue" style="text-decoration: none;">
+              <div class="stats-item d-flex align-items-center justify-content-center text-center w-100 h-100" style="background-color: #fff; padding: 20px; border-radius: 10px;">
+                <div>
+                  <h3 style="font-size: 1.25rem; color: #121212;">Lost Revenue</h3>
+                  <p style="margin-top: 10px; color: #272727;">Practices miss opportunities for ancillary income.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+
+<!--  non adherence          d8e7e9 ,         -->
+    <section id="non-adherence" style="background-color: #e8ecf0; color: #fff; padding: 50px 0;">
+      <div class="container">
+        <div class="row">
+          <!-- Left Side: Title -->
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h2 style="text-transform: uppercase; font-size: 2rem; margin-bottom: 10px;color: #2c2b2b;">Patient Non-Adherence</h2>
+            <p style="color: #474545; font-size: 1rem;">The Impact</p>
+          </div>
+    
+          <!-- Right Side: Colored Blocks -->
+          <div class="col-lg-7">
+            <div class="row gy-4 d-flex">
+              <!-- Block 1 -->
+              <div class="col-md-6 d-flex">
+                <div style="background-color: #e91e63; color: #fff; padding: 20px; border-radius: 10px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                  <h4 style="font-size: 1.3rem; margin-bottom: 10px;color: #121212;">Medication adherence rates</h4>
+                  <p style="font-size: 0.9rem;">Understanding adherence rates is crucial. Statistical data highlights the current state of medication adherence.</p>
+                </div>
+              </div>
+              <!-- Block 2 -->
+              <div class="col-md-6 d-flex">
+                <div style="background-color: #9c27b0; color: #fff; padding: 20px; border-radius: 10px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                  <h4 style="font-size: 1.3rem; margin-bottom: 10px;color: #121212;">Factors contributing to non-adherence</h4>
+                  <p style="font-size: 0.9rem;">Complexity, costs, and access are key challenges. These factors significantly impact patients' ability to adhere to their medication regimens.</p>
+                </div>
+              </div>
+              <!-- Block 3 -->
+              <div class="col-md-6 d-flex">
+                <div style="background-color: #673ab7; color: #fff; padding: 20px; border-radius: 10px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                  <h4 style="font-size: 1.3rem; margin-bottom: 10px;color: #121212;">Consequences of non-adherence</h4>
+                  <p style="font-size: 0.9rem;">Non-adherence leads to serious health risks. Increased hospitalizations and poorer health outcomes are direct results of not following prescribed medication.</p>
+                </div>
+              </div>
+              <!-- Block 4 -->
+              <div class="col-md-6 d-flex">
+                <div style="background-color: #3f51b5; color: #fff; padding: 20px; border-radius: 10px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                  <h4 style="font-size: 1.3rem; margin-bottom: 10px; color:#121212;">Complexity, costs, and access</h4>
+                  <p style="font-size: 0.9rem;">Non-adherence results in significant barriers, directly impacting patients' ability to maintain consistent medication usage.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -465,6 +564,8 @@
       </div>
     </section>
     
+
+
 <!-- Services Section -->
 <section id="services" class="services section">
 
@@ -538,7 +639,7 @@
 
 
 
-<section id="advantage" style="background-color: #121212; color: #fff; padding: 50px 0;">
+<section id="advantage" style="background-color: #e8ecf0; color: #fff; padding: 50px 0;">
   <div class="container">
     <div class="row">
       <!-- Left Side: Columns -->
@@ -587,178 +688,17 @@
 
       <!-- Right Side: Text -->
       <div class="col-lg-4 d-flex flex-column justify-content-center">
-        <h2 style="text-transform: uppercase; margin-bottom: 10px; font-size: 1.5rem;">The EssentialRx Advantage</h2>
-        <p style="color: #bbb; font-size: 1rem; margin-bottom: 15px;">What Sets Us Apart</p>
-        <p style="font-size: 0.9rem; color: #ccc; line-height: 1.5;">Why Choose EssentialRx? We provide unique, impactful solutions to elevate your practice's performance.</p>
+        <h2 style="text-transform: uppercase; margin-bottom: 10px; font-size: 1.5rem; color: #2c2b2b;">The EssentialRx Advantage</h2>
+        <p style="color: #686363; font-size: 1rem; margin-bottom: 15px;">What Sets Us Apart</p>
+        <p style="font-size: 0.9rem; color: #686363; line-height: 1.5;">Why Choose EssentialRx? We provide unique, impactful solutions to elevate your practice's performance.</p>
       </div>
     </div>
   </div>
 </section>
 
 
-    <!-- Appointment Section -->
-    <section id="appointment" class="appointment section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>MAKE AN APPOINTMENT</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-          <div class="row">
-            <div class="col-md-4 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-            </div>
-            <div class="col-md-4 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required="">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 form-group mt-3">
-              <input type="datetime-local" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required="">
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="department" id="department" class="form-select" required="">
-                <option value="">Select Department</option>
-                <option value="Department 1">Department 1</option>
-                <option value="Department 2">Department 2</option>
-                <option value="Department 3">Department 3</option>
-              </select>
-            </div>
-            <div class="col-md-4 form-group mt-3">
-              <select name="doctor" id="doctor" class="form-select" required="">
-                <option value="">Select Doctor</option>
-                <option value="Doctor 1">Doctor 1</option>
-                <option value="Doctor 2">Doctor 2</option>
-                <option value="Doctor 3">Doctor 3</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
-          </div>
-          <div class="mt-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
-            <div class="text-center"><button type="submit">Make an Appointment</button></div>
-          </div>
-        </form>
-
-      </div>
-
-    </section><!-- /Appointment Section -->
-
-    <!-- Tabs Section -->
-    <section id="tabs" class="tabs section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Departments</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tabs-tab-1">Cardiology</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-2">Neurology</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-3">Hepatology</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-4">Pediatrics</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tabs-tab-5">Ophthalmologists</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tabs-tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Cardiology</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tabs-tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Neurology</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tabs-tab-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Hepatology</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tabs-tab-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Pediatrics</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tabs-tab-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Ophthalmologists</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Tabs Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+    <!-- insurance Section -->
+    <section id="insurance" class="testimonials section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -861,7 +801,7 @@
     </section><!-- /Testimonials Section -->
 
     <!-- Doctors Section -->
-    <section id="doctors" class="doctors section light-background">
+    <section id="administrative" class="doctors section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -942,61 +882,7 @@
     </section><!-- /Doctors Section -->
    <style>
     /*
-   body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-.opportunities-section {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    background-color: #101010;
-    background-color: #f3ebeb;
-
-    color: #fff;
-    padding: 50px 20px;
-    gap: 20px;
-}
-
-.card {
-    background: #181818;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #f3ebeb;
-    
-    
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card .content {
-    padding: 20px;
-}
-
-.card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #000;
-}
-
-.card p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-*/
-/**/
+  
 
  /*the  new oneee*/
 
@@ -1094,7 +980,8 @@
 }
 
 </style>
-<section class="opportunities-section">
+
+<section id="revenue" class="opportunities-section">
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
       <h2>LOST REVENUE</h2>
@@ -1151,313 +1038,371 @@
 </section>
 
 
+<section id="workflow" class="opportunities-section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+      <h2>WORKFLOW
+        AUTOMATION:
+        ENHANCING
+        EFFICIENCY</h2>
+      <p>Exploring the Impact of Automation in Healthcare</p>
+  </div>
+  <!-- End Section Title -->
+
+  <!-- Cards -->
+  <div class="cards-container">
+      <div class="card">
+          <img src="assets/img/auto/dig.webp"  alt="Financial statistics"> <!-- Replace with your image -->
+          <div class="content">
+              <h2>Benefits of
+                Automated
+                Workflows</h2>
+              <p>Streamline healthcare operations
+                with automated workflows,
+                improving efficiency, accuracy,
+                and productivity.</p>
+          </div>
+      </div>
+      <div class="card">
+          <img src="assets/img/auto/Industrial-Automation-for-Business-Growth.webp" alt="Financial chart"> <!-- Replace with your image -->
+          <div class="content">
+              <h2>AI-Driven Key
+                Automation Areas</h2>
+              <p>Revolutionizing healthcare
+                through AI-powered solutions in
+                dispensing, billing, inventory
+                management, data-analysis and
+                real-time patient tracking.</p>
+          </div>
+      </div>
+      <div class="card">
+          <img src="assets/img/auto/digital grow-1.jpeg" alt="Cost optimization"> <!-- Replace with your image -->
+          <div class="content">
+              <h2>Real-World
+                Efficiency Gains
+                Recommendations</h2>
+              <p>Proven case studies highlight
+                measurable gains in efficiency,
+                reduced operational costs, and
+                enhanced patient care through
+                automation.</p>
+          </div>
+      </div>
+  </div>
+</section>
     
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Gallery</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+<style>/* General Body Styles */
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #101010; /* Dark background */
+      color: #fff; /* White text */
+  }
+  
+  /* Section Title */
+  .case-studies-section .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+  }
+  
+  .case-studies-section .section-title h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #352e2e;
+      margin-bottom: 10px;
+  }
+  
+  .case-studies-section .section-title p {
+      font-size: 1rem;
+      color: #979292; /* Slightly lighter text */
+  }
+  
+  /* Timeline Styles */
+  .timeline {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  .timeline-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+  }
+  
+  .timeline-item .icon {
+      background-color: #ff4081; /* Pink background */
+      color: #fff; /* White icon */
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 2;
+  }
+  
+  .timeline-item .content {
+      background-color: #181818; /* Slightly lighter dark background */
+      padding: 20px;
+      border-radius: 10px;
+      margin-left: 20px;
+      flex: 1;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .timeline-item .content h3 {
+      font-size: 1.25rem;
+      color: #ff4081; /* Pink heading */
+      margin-bottom: 10px;
+  }
+  
+  .timeline-item .content p {
+      font-size: 1rem;
+      color: #ccc; /* Lighter text for description */
+  }
+  
+  /* Line Connector */
+  .timeline-item:before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #ff4081; /* Pink connector */
+      top: 0;
+      bottom: 0;
+      left: 30px; /* Center the line */
+      z-index: 1;
+  }
+  
+  .timeline-item:first-child:before {
+      top: 30px; /* Offset line start for first item */
+  }
+  
+  .timeline-item:last-child:before {
+      bottom: 30px; /* Offset line end for last item */
+  }
+  </style>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "centeredSlides": true,
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 0
-                },
-                "768": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 20
-                },
-                "1200": {
-                  "slidesPerView": 5,
-                  "spaceBetween": 20
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+<section id="success" class="case-studies-section">
+  <!-- Section Title -->
+  <div class="section-title">
+      <h2>CASE STUDIES: SUCCESS STORIES</h2>
+      <p>Successful Implementations of EssentialRx Solutions</p>
+  </div>
+
+  <!-- Timeline -->
+  <div id="timeline" class="timeline">
+      <!-- Existing Timeline Items -->
+      <div class="timeline-item">
+          <div class="icon">
+              <i class="fa fa-lightbulb"></i>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </section><!-- /Gallery Section -->
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-3">
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-xl-3 col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="pricing-item">
-              <span class="advanced">Advanced</span>
-              <h3>Ultimate</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row justify-content-center">
-
-          <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="faq-container">
-
-              <div class="faq-item">
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
-                <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-                <div class="faq-content">
-                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
-          </div><!-- End Faq Column-->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        <iframe style="border:0; width: 100%; height: 370px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div><!-- End Google Maps -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-lg-6 ">
-            <div class="row gy-4">
-
-              <div class="col-lg-12">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bi bi-telephone"></i>
-                  <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="col-md-6">
-                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p>info@example.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
+          <div class="content">
+              <h3>Successful Implementations</h3>
+              <p>Brief summaries of successful implementations of EssentialRx solutions.</p>
           </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
+      </div>
+      <div class="timeline-item">
+          <div class="icon">
+              <i class="fa fa-heart"></i>
+          </div>
+          <div class="content">
+              <h3>Measurable Outcomes</h3>
+              <p>Improvements in adherence and revenue growth as a result of the solutions.</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+          <div class="icon">
+              <i class="fa fa-users"></i>
+          </div>
+          <div class="content">
+              <h3>Client Testimonials</h3>
+              <p>Testimonials from clients highlighting their satisfaction and the impact of the solutions.</p>
+          </div>
       </div>
 
-    </section><!-- /Contact Section -->
+      <!-- New Timeline Items -->
+      <div class="timeline-item">
+          <div class="icon">
+              <i class="fa fa-chart-line"></i>
+          </div>
+          <div class="content">
+              <h3>Visuals Overview</h3>
+              <p>Case study snapshots showcasing key metrics and quotes from satisfied clients.</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+          <div class="icon">
+              <i class="fa fa-comments"></i>
+          </div>
+          <div class="content">
+              <h3>Client Feedback</h3>
+              <p>Detailed feedback from clients on the overall impact and satisfaction levels.</p>
+          </div>
+      </div>
+      <div class="timeline-item">
+          <div class="icon">
+              <i class="fa fa-handshake"></i>
+          </div>
+          <div class="content">
+              <h3>Strategic Partnerships</h3>
+              <p>Collaborative partnerships that drive continued success and innovation.</p>
+          </div>
+      </div>
+  </div>
+</section>
 
+
+<!-- testimonial -->
+
+
+<style>
+    .testimonials-section {
+      text-align: center;
+      background-color: #e8ecf0; /* Dark background */
+      padding: 50px 20px;
+      color: #fff;
+  }
+  
+  .testimonials-section .section-title h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #424141;
+  }
+  
+  .testimonials-section .section-title p {
+      font-size: 1rem;
+      color: #888484; /* Lighter text */
+      margin-bottom: 40px;
+  }
+  
+  .icons-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+  }
+  
+  .icon-item {
+      background-color: #fff; /* Slightly lighter dark background */
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+  }
+  
+  .icon-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .icon {
+      background-color: #ff4081; /* Pink background */
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 20px;
+      color: #fff; /* White icon */
+      font-size: 2rem;
+  }
+  
+  .icon-item h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #ff4081; /* Pink for headings */
+  }
+  
+  .icon-item p {
+      font-size: 1rem;
+      color: #383636; /* Lighter text */
+  }
+</style>  
+
+    <section id="testimonials2" class="testimonials-section">
+      <!-- Section Title -->
+      <div class="section-title">
+          <h2>TESTIMONIALS: VOICES OF OUR CLIENTS</h2>
+          <p>Feedback from Healthcare Professionals</p>
+      </div>
+  
+      <!-- Icons Section -->
+      <div class="icons-container">
+          <div class="icon-item">
+              <div class="icon">
+                  <i class="fa fa-quote-left"></i>
+              </div>
+              <h3>Selection of Quotes</h3>
+              <p>A collection of testimonials from healthcare professionals who have utilized EssentialRx services.</p>
+          </div>
+          <div class="icon-item">
+              <div class="icon">
+                  <i class="fa fa-chart-line"></i>
+              </div>
+              <h3>Highlights of Benefits</h3>
+              <p>Specific advantages experienced by clients are showcased.</p>
+          </div>
+          <div class="icon-item">
+              <div class="icon">
+                  <i class="fa fa-heartbeat"></i>
+              </div>
+              <h3>Improved Patient Care</h3>
+              <p>Testimonials emphasize enhancements in patient care and overall practice efficiency.</p>
+          </div>
+      </div>
+  </section>
+  
+
+<!-- last one -->
+
+    
+<section id="future" class="opportunities-section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+      <h2>FUTURE DIRECTIONS</h2>
+      <p>Growth and Innovations</p>
+  </div>
+  <!-- End Section Title -->
+
+  <!-- Cards -->
+  <div class="cards-container">
+      <div class="card">
+          <img src="assets/img/last/Digital-transformation-drives-efficiency-sustainable-growth.webp"  alt="Financial statistics"> <!-- Replace with your image -->
+          <div class="content">
+              <h2>Overview of Planned Innovations</h2>
+              <p>Discussion on the upcoming innovations and expansions
+                for EssentialRx.</p>
+          </div>
+      </div>
+      <div class="card">
+          <img src="assets/img/last/shata.jpg" alt="Financial chart"> <!-- Replace with your image -->
+          <div class="content">
+              <h2>Strategies for Staying Ahead</h2>
+              <p>Outline of strategies aimed at maintaining a competitive
+                edge in the healthcare landscape.</p>
+          </div>
+      </div>
+      <div class="card">
+          <img src="assets/img/last/growing-tree-on-converging-point-600nw-2164014127.webp" alt="Cost optimization"> <!-- Replace with your image -->
+          <div class="content">
+              <h2>Commitment to Improvement</h2>
+              <p>Dedication to continuous improvement and enhanced
+                client support.</p>
+          </div>
+      </div>
+  </div>
+</section>
+    
+    
   </main>
 
   <footer id="footer" class="footer light-background">
