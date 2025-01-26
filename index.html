@@ -138,7 +138,7 @@
       </div>
 
     </section><!-- /Hero Section -->
-
+<!--  old features section
     <style>/* Center the entire section */
       #featured-services {
           display: flex;
@@ -192,10 +192,16 @@
           color: #555;
           line-height: 1.6;
       }
+      
+    
+  
+  
       </style>
 
     <section id="featured-services" class="featured-services section">
+    
       <div class="container">
+
           <div class="service-item">
               <div class="icon">
                   <i class="fas fa-pills icon"></i>
@@ -224,140 +230,535 @@
           </div>
       </div>
   </section>
-
-
+-->
+  <style>
+    /* Center the entire section */
+    #featured-services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height for centering */
+        text-align: center;
+        background-color: #f9f9f9; /* Optional background color */
+    }
+  
+    /* Center the container */
+    #featured-services .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Wrap items on smaller screens */
+        gap: 20px; /* Add spacing between items */
+    }
+  
+    /* Style individual service items */
+    .service-item {
+        background: #fff; /* White background for cards */
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        max-width: 300px; /* Limit card width */
+        text-align: center;
+    }
+  
+    .service-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+  
+    .service-item .icon {
+        font-size: 3rem;
+        color: #00bcd4; /* Teal color for icons */
+        margin-bottom: 10px;
+    }
+  
+    .service-item h4 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+  
+    .service-item p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+  
+    /* Responsive adjustments for smaller devices */
+    @media (max-width: 768px) {
+        #featured-services {
+            height: auto; /* Adjust height to fit content */
+            padding: 20px 0; /* Add spacing for smaller devices */
+        }
+    }
+  
+    @media (max-width: 480px) {
+        #featured-services {
+            display: none; /* Hide the entire section for very small screens */
+        }
+    }
+  </style>
+  
+  <section id="featured-services" class="featured-services section">
+    <div class="container">
+  
+        <div class="service-item">
+            <div class="icon">
+                <i class="fas fa-pills icon"></i>
+            </div>
+            <h4><a href="#solution" class="stretched-link">Streamlined Patient Care</a></h4>
+            <p>Delivering innovative solutions for in-office medication dispensing, enhancing
+                patient outcomes, and practice efficiency.</p>
+        </div>
+  
+        <div class="service-item">
+            <div class="icon">
+                <i class="fas fa-lightbulb icon"></i>
+            </div>
+            <h4><a href="" class="stretched-link">Expert-Led Solutions</a></h4>
+            <p>Leverage expertise in specialty medications, white bagging, brown bagging, and
+                billing to optimize workflows and drive results.</p>
+        </div>
+  
+        <div class="service-item">
+            <div class="icon">
+                <i class="fas fa-hospital-user icon"></i>
+            </div>
+            <h4><a href="" class="stretched-link">Transforming Practices</a></h4>
+            <p>Delivering innovative solutions for in-office medication dispensing, enhancing
+                patient outcomes and operational efficiency.</p>
+        </div>
+    </div>
+  </section>
 
 <!--The EssentialRx Solution:-->
 
-  <section id="solution" class="solution section" style="background-color: #edf1f5; color: #fff; padding: 50px 0; position: relative; height: 800px;">
-    <div class="container text-center" data-aos="fade-up">
-      <h2 style="text-transform: uppercase; margin-bottom: 30px; color: #303030;">The EssentialRx Solution: Streamlining Care</h2>
-    </div>
-  
-    <div class="container" style="position: relative; height: 100%; display: flex; align-items: center; justify-content: center;">
-      <!-- Central Image and Circle -->
-      <div style="position: relative; z-index: 1;">
-        <div style="
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 400px;
-          height: 400px;
-          border: 2px solid #161414;
-          border-radius: 50%;
-          z-index: 0;">
-        </div>
-        <img src="assets/img/solutions2.jpg" alt="Central Phone" style="width:355px ;height: 333px; z-index: 1; position: relative;">
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The EssentialRx Solution</title>
+  <style>
+    /* General Section Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #edf1f5;
+      color: #303030;
+    }
+
+    #solution {
+      background-color: #edf1f5;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    #solution h2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      color: #303030;
+    }
+
+    /* Grid Layout for Features */
+    .solution-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px; /* Reduced gap between elements */
+      justify-items: center;
+      align-items: center;
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Central Image in the Grid *
+    .central-image {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+
+    .central-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+*/
+    
+  .central-image {
+    grid-column: 2 / 3; /* Centers it horizontally in the grid */
+    grid-row: 2 / 3; /* Centers it vertically in the grid */
+    position: relative;
+    width: 400px; /* Increased width */
+    height: 400px; /* Increased height */
+    display: flex; /* Ensures proper alignment */
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centers it for non-grid fallback scenarios */
+  }
+
+  .central-image img {
+    width: 100%; /* Ensures image fits within the container */
+    height: 100%; /* Ensures the image matches the container height */
+    border-radius: 50%; /* Keeps the circular shape */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for emphasis */
+    object-fit: cover; /* Ensures the image retains proper aspect ratio */
+  }
+
+
+    /* Feature Boxes Around the Circle */
+    .feature-box {
+      max-width: 200px; /* Reduced width for tighter layout */
+      text-align: center;
+      padding: 15px; /* Adjusted padding for compactness */
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    /* Assign Positions to Each Feature Box */
+    .feature-top-left {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+
+    .feature-top-right {
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+
+    .feature-bottom-left {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    .feature-bottom-right {
+      grid-column: 3 / 4;
+      grid-row: 3 / 4;
+    }
+
+    .feature-box h4 {
+      font-size: 1.1rem;
+      color: #201f22;
+      margin-bottom: 8px; /* Reduced margin for tighter content */
+    }
+
+    .feature-box p {
+      font-size: 0.95rem;
+      color: #565558;
+      line-height: 1.4;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 1024px) {
+      .solution-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+
+      .feature-box {
+        margin-bottom: 20px;
+      }
+
+      .central-image {
+        margin: 20px auto;
+        width: 250px;
+        height: 250px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      #solution h2 {
+        font-size: 1.8rem;
+      }
+
+      .feature-box h4 {
+        font-size: 1rem;
+      }
+
+      .feature-box p {
+        font-size: 0.9rem;
+      }
+
+      .central-image {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      #solution h2 {
+        font-size: 1.5rem;
+      }
+
+      .feature-box {
+        padding: 10px; /* Further reduced padding for small screens */
+      }
+
+      .feature-box h4 {
+        font-size: 0.9rem;
+      }
+
+      .feature-box p {
+        font-size: 0.8rem;
+      }
+
+      .central-image {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+      /* Feature Boxes with Rectangular Design */
+  .feature-box {
+    width: 100%; /* Allows responsiveness */
+    max-width: 300px; /* Adjust the maximum width */
+    min-height: 120px; /* Adds height to create a rectangular shape */
+    text-align: center;
+    padding: 20px 15px; /* Extra padding for content */
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Soft rounded corners */
+  }
+
+  .feature-box h4 {
+    font-size: 1.2rem;
+    color: #201f22;
+    margin-bottom: 8px; /* Reduced spacing */
+  }
+
+  .feature-box p {
+    font-size: 1rem;
+    color: #565558;
+    line-height: 1.4;
+  }
+
+  /* Adjustments for Responsive Design */
+  @media screen and (max-width: 768px) {
+    .feature-box {
+      max-width: 90%; /* Ensures the boxes resize on smaller screens */
+      min-height: auto; /* Removes height restriction */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .feature-box {
+      padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .feature-box h4 {
+      font-size: 1rem;
+    }
+
+    .feature-box p {
+      font-size: 0.9rem;
+    }
+  }
+  </style>
+
+<style>
+  /* General Styling */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #edf1f5;
+    color: #303030;
+  }
+
+  #solution {
+    background-color: #edf1f5;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  #solution h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #303030;
+  }
+
+  /* Grid Layout for Central Image and Features */
+  .solution-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Central Image */
+  .central-image {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .central-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+
+  /* Feature Boxes */
+  .feature-box {
+    width: 100%;
+    max-width: 300px;
+    min-height: 120px;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .feature-box h4 {
+    font-size: 1.2rem;
+    color: #201f22;
+    margin-bottom: 8px;
+  }
+
+  .feature-box p {
+    font-size: 1rem;
+    color: #565558;
+    line-height: 1.4;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 1024px) {
+    .solution-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    .central-image {
+      width: 250px;
+      height: 250px;
+    }
+
+    .feature-box {
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #solution h2 {
+      font-size: 1.8rem;
+    }
+
+    .central-image {
+      width: 200px;
+      height: 200px;
+    }
+
+    .feature-box {
+      padding: 15px;
+    }
+
+    .feature-box h4 {
+      font-size: 1rem;
+    }
+
+    .feature-box p {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    #solution h2 {
+      font-size: 1.5rem;
+    }
+
+    .central-image {
+      width: 150px;
+      height: 150px;
+    }
+
+    .feature-box {
+      padding: 10px;
+    }
+
+    .feature-box h4 {
+      font-size: 0.9rem;
+    }
+
+    .feature-box p {
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <section id="solution">
+    <h2>The EssentialRx Solution: Streamlining Care</h2>
+    <div class="solution-grid">
+      <!-- Feature 1 -->
+      <div class="feature-box feature-top-left">
+        <h4>Workflow Automation</h4>
+        <p>Automate processes to save time and reduce errors.</p>
       </div>
-  
-      <!-- Features Around the Circle -->
-      <!-- Top Left -->
-      <div style="position: absolute; top: 10%; left: 10%; max-width: 300px; text-align: center;">
-        <h4 style="color: #201f22; margin-bottom: 10px;">Workflow Automation</h4>
-        <p style="color: #565558; word-wrap: break-word; overflow-wrap: break-word; margin: 0;">
-          Automate processes to save time and reduce errors.
-        </p>
+
+      <!-- Feature 2 -->
+      <div class="feature-box feature-top-right">
+        <h4>Insurance Expertise</h4>
+        <p>Navigate complex payer requirements, including Medicare Part B.</p>
       </div>
-  
-      <!-- Top Right -->
-      <div style="position: absolute; top: 10%; right: 10%; max-width: 300px; text-align: center;">
-        <h4 style="color: #201f22; margin-bottom: 10px;">Insurance Expertise</h4>
-        <p style="color: #565558; word-wrap: break-word; overflow-wrap: break-word; margin: 0;">
-          Navigate complex payer requirements, including Medicare Part B.
-        </p>
+
+      <!-- Central Image -->
+      <div class="central-image">
+        <img src="assets/img/solutions3.jpg"  alt="Central Solution Image">
       </div>
-  
-      <!-- Bottom Left -->
-      <div style="position: absolute; bottom: 10%; left: 10%; max-width: 300px; text-align: center;">
-        <h4 style="color: #201f22; margin-bottom: 10px;">Enhanced Patient Care</h4>
-        <p style="color: #565558; word-wrap: break-word; overflow-wrap: break-word; margin: 0;">
-          Improve adherence and outcomes with immediate medication access.
-        </p>
+
+      <!-- Feature 3 -->
+      <div class="feature-box feature-bottom-left">
+        <h4>Enhanced Patient Care</h4>
+        <p>Improve adherence and outcomes with immediate medication access.</p>
       </div>
-  
-      <!-- Bottom Right -->
-      <div style="position: absolute; bottom: 10%; right: 10%; max-width: 300px; text-align: center;">
-        <h4 style="color: #201f22; margin-bottom: 10px;">Streamlined In-Office Dispensing</h4>
-        <p style="color: #565558; word-wrap: break-word; overflow-wrap: break-word; margin: 0;">
-          Ensure patients receive medications conveniently without delays, reducing barriers to adherence.
-        </p>
+
+      <!-- Feature 4 -->
+      <div class="feature-box feature-bottom-right">
+        <h4>Streamlined In-Office Dispensing</h4>
+        <p>Ensure patients receive medications conveniently without delays, reducing barriers to adherence.</p>
       </div>
     </div>
   </section>
-  
 
 
 
 
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>EssentialRx Icons</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #121212;
-                margin: 0;
-                padding: 0;
-                color: #fff;
-            }
-    
-            .icon-section {
-                max-width: 1200px;
-                margin: 50px auto;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-    
-            .icon-card {
-                display: flex;
-                align-items: center;
-                padding: 20px;
-                border-radius: 10px;
-                color: #fff;
-            }
-    
-            .icon-card:nth-child(1) {
-                background-color: #e91e63; /* Pink */
-            }
-    
-            .icon-card:nth-child(2) {
-                background-color: #9c27b0; /* Purple */
-            }
-    
-            .icon-card:nth-child(3) {
-                background-color: #673ab7; /* Deep Purple */
-            }
-    
-            .icon {
-                font-size: 40px;
-                margin-right: 20px;
-            }
-    
-            .icon-card h3 {
-                margin: 0;
-                font-size: 1.5rem;
-            }
-    
-            .icon-card p {
-                margin: 5px 0 0;
-                font-size: 1rem;
-                line-height: 1.4;
-            }
-        </style>
-    </head>
-    
+</body>
+</html>
 
-   
 
-<!-- Features Section -->
+
+
+<!--  about section   -->
 <section id="about" class="features section">
-
+  
   <div class="container">
 
     <div class="row justify-content-around gy-4">
@@ -415,7 +816,7 @@
 
   </div>
 
-</section><!-- /Features Section -->
+</section><!-- /about  Section -->
 <style>
   .stats-item {
     display: flex;
@@ -794,7 +1195,74 @@
 
     </section><!-- /Testimonials Section -->
 
-    <!-- Doctors Section -->
+    <!-- OVERLOAD Section -->
+
+    <style>
+      /* General Styling for Team Member Section */
+      .team-member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+    
+      /* Image Styling */
+      .member-img img {
+        width: 100%; /* Automatically adjusts to the container width */
+        height: auto; /* Maintains the aspect ratio */
+        border-radius: 10px; /* Optional: adds rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+    
+      /* Member Info Styling */
+      .member-info h4 {
+        font-size: 1.2rem;
+        color: #201f22;
+        margin-top: 15px;
+        margin-bottom: 8px;
+      }
+    
+      .member-info span {
+        font-size: 0.95rem;
+        color: #565558;
+        line-height: 1.4;
+      }
+    
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        .team-member {
+          padding: 15px;
+        }
+    
+        .member-info h4 {
+          font-size: 1rem;
+        }
+    
+        .member-info span {
+          font-size: 0.9rem;
+        }
+      }
+    
+      @media (max-width: 480px) {
+        .team-member {
+          padding: 10px;
+        }
+    
+        .member-info h4 {
+          font-size: 0.9rem;
+        }
+    
+        .member-info span {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+    
     <section id="administrative" class="doctors section light-background">
 
       <!-- Section Title -->
@@ -838,11 +1306,11 @@
             </div>
           </div><!-- End Team Member -->
 
+          
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/doctors/pati.webp" style="height: 277px;" class="img-fluid" alt="">
-                
+                <img src="assets/img/doctors/patient2.jpg" style="height: 277px;" class="img-fluid responsive-img" alt="Effect on patient care">
               </div>
               <div class="member-info">
                 <h4>Effect on patient care</h4>
@@ -852,7 +1320,8 @@
                   patients.</span>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
+          
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
             <div class="team-member">
@@ -975,6 +1444,164 @@
 
 </style>
 
+
+
+<style>
+  /* General Styles */
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+  }
+  
+  .opportunities-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+      background-color: #ffffff;
+      border-top: 4px solid #00bcd4;
+  }
+  
+  .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+  }
+  
+  .section-title h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+  }
+  
+  .section-title p {
+      font-size: 1.1rem;
+      color: #555;
+      margin: 0;
+      position: relative;
+  }
+  
+  .section-title p:before {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background-color: #00bcd4;
+      margin: 10px auto;
+  }
+  
+  /* Cards Container */
+  .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap; /* Wrap cards on smaller screens */
+  }
+  
+  .card {
+      background: #f4f4f4;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      flex: 1;
+      max-width: 300px;
+      min-width: 250px; /* Ensures cards don't shrink too much */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card img {
+      width: 100%; /* Make image responsive */
+      height: 150px;
+      object-fit: contain;
+      margin-top: 20px;
+  }
+  
+  .card .content {
+      padding: 20px;
+  }
+  
+  .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      color: #00bcd4;
+  }
+  
+  .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #555;
+  }
+  
+  /* Responsive Design */
+  
+  /* Tablets */
+  @media (max-width: 1024px) {
+      .cards-container {
+          gap: 15px; /* Reduce gap between cards */
+      }
+  
+      .card {
+          max-width: 90%; /* Allow cards to grow wider if needed */
+          min-width: 300px;
+      }
+  }
+  
+  /* Mobile Devices */
+  @media (max-width: 768px) {
+      .cards-container {
+          flex-direction: column; /* Stack cards vertically */
+          gap: 20px;
+      }
+  
+      .card {
+          max-width: 100%; /* Full width of container */
+          min-width: unset; /* Allow flexibility */
+      }
+  
+      .card img {
+          height: 140px; /* Adjust image height for smaller screens */
+      }
+  
+      .section-title h2 {
+          font-size: 1.8rem;
+      }
+  
+      .section-title p {
+          font-size: 1rem;
+      }
+  }
+  
+  /* Small Mobile Devices */
+  @media (max-width: 480px) {
+      .opportunities-section {
+          padding: 30px 15px;
+      }
+  
+      .card img {
+          height: 120px; /* Further reduce image height */
+      }
+  
+      .card h2 {
+          font-size: 1.1rem;
+      }
+  
+      .card p {
+          font-size: 0.9rem;
+      }
+  }
+  </style>
+  
 <section id="revenue" class="opportunities-section">
   <!-- Section Title -->
   <div class="container section-title" data-aos="fade-up">
