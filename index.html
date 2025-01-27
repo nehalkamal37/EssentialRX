@@ -295,10 +295,24 @@
         }
     }
   
-    @media (max-width: 480px) {
-        #featured-services {
-            display: none; /* Hide the entire section for very small screens */
-        }
+  
+        /* Responsive adjustments for very small devices */
+  @media (max-width: 480px) {
+      #featured-services {
+          flex-direction: column; /* Stack items vertically */
+          align-items: stretch; /* Ensure proper alignment */
+          height: auto; /* Adjust height to fit content */
+          padding: 10px; /* Add smaller padding */
+      }
+
+      #featured-services .container {
+          flex-wrap: wrap; /* Ensure items wrap properly */
+      }
+
+      .service-item {
+          width: 100%; /* Make the items take full width */
+          max-width: none; /* Remove any width restriction */
+      }
     }
   </style>
   
@@ -333,6 +347,72 @@
         </div>
     </div>
   </section>
+
+
+
+
+<!--  about section   -->
+<section id="about" class="features section">
+  
+  <div class="container">
+
+    <div class="row justify-content-around gy-4">
+      <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/about-section.jpg" alt="">
+      </div>
+
+      <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+        <h3>About Us</h3>
+        <p>Who we are.</p>
+        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-users"></i>
+          <div>
+            <h4><a href="#" class="stretched-link">Collaborating with Practices to
+              Transform Care</a></h4>
+            <p>We empower physician practices to implement seamless
+              in-office dispensing solutions tailored to their needs.</p>
+          </div>
+        </div><!-- End Icon Box -->
+
+        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+          <i class="fas fa-procedures"></i>
+          <div>
+            <h4><a href="#" class="stretched-link">Advancing Patient Outcomes</a></h4>
+            <p>Our solutions improve adherence, streamline care, and optimize practice efficiency.</p>
+          </div>
+        </div><!-- End Icon Box -->
+
+        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+          <i class="fas fa-prescription-bottle"></i>
+          <div>
+            <h4><a href="#" class="stretched-link">A Leader in Medication Dispensing</a></h4>
+            <p>We bring unmatched experience in specialty medications, infusion services, in-office dispensing, and automation-driven workflows.</p>
+          </div>
+        </div><!-- End Icon Box -->
+
+        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+          <i class="fas fa-project-diagram"></i>
+          <div>
+            <h4><a href="#" class="stretched-link">Streamlined Workflow Solutions</a></h4>
+            <p>Driving operational efficiency through automation, customized dispensing workflows, and seamless integration with practice management systems.</p>
+          </div>
+        </div><!-- End Icon Box -->
+
+        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+          <i class="fas fa-calendar-dollar"></i>
+          <div>
+            <h4><a href="#" class="stretched-link">Navigating Complex Payer Systems</a></h4>
+            <p>Expertise in billing, authorizations, appeals, and Medicare Part B navigation to maximize reimbursement.</p>
+          </div>
+        </div><!-- End Icon Box -->
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!-- /about  Section -->
 
 <!--The EssentialRx Solution:-->
 
@@ -749,67 +829,6 @@
 
 
 
-<!--  about section   -->
-<section id="about" class="features section">
-  
-  <div class="container">
-
-    <div class="row justify-content-around gy-4">
-      <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <img src="assets/img/about-section.jpg" alt="">
-      </div>
-
-      <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
-        <h3>About Us</h3>
-        <p>Who we are.</p>
-        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-          <i class="fas fa-users"></i>
-          <div>
-            <h4><a href="#" class="stretched-link">Collaborating with Practices to
-              Transform Care</a></h4>
-            <p>We empower physician practices to implement seamless
-              in-office dispensing solutions tailored to their needs.</p>
-          </div>
-        </div><!-- End Icon Box -->
-
-        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
-          <i class="fas fa-procedures"></i>
-          <div>
-            <h4><a href="#" class="stretched-link">Advancing Patient Outcomes</a></h4>
-            <p>Our solutions improve adherence, streamline care, and optimize practice efficiency.</p>
-          </div>
-        </div><!-- End Icon Box -->
-
-        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
-          <i class="fas fa-prescription-bottle"></i>
-          <div>
-            <h4><a href="#" class="stretched-link">A Leader in Medication Dispensing</a></h4>
-            <p>We bring unmatched experience in specialty medications, infusion services, in-office dispensing, and automation-driven workflows.</p>
-          </div>
-        </div><!-- End Icon Box -->
-
-        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
-          <i class="fas fa-project-diagram"></i>
-          <div>
-            <h4><a href="#" class="stretched-link">Streamlined Workflow Solutions</a></h4>
-            <p>Driving operational efficiency through automation, customized dispensing workflows, and seamless integration with practice management systems.</p>
-          </div>
-        </div><!-- End Icon Box -->
-
-        <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
-          <i class="fas fa-calendar-dollar"></i>
-          <div>
-            <h4><a href="#" class="stretched-link">Navigating Complex Payer Systems</a></h4>
-            <p>Expertise in billing, authorizations, appeals, and Medicare Part B navigation to maximize reimbursement.</p>
-          </div>
-        </div><!-- End Icon Box -->
-
-      </div>
-    </div>
-
-  </div>
-
-</section><!-- /about  Section -->
 <style>
   .stats-item {
     display: flex;
