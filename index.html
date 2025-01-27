@@ -416,277 +416,74 @@
 
 <!--The EssentialRx Solution:-->
 
-  <style>
-    /* General Section Styling */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #edf1f5;
-      color: #303030;
-    }
+<section id="solution">
+  <h2>The EssentialRx Solution: Streamlining Care</h2>
+  <div class="solution-grid">
+    <!-- Feature 1 -->
+    <div class="feature-box feature-top-left">
+      <h4>Workflow Automation</h4>
+      <p>Automate processes to save time and reduce errors.</p>
+    </div>
 
-    #solution {
-      background-color: #edf1f5;
-      padding: 50px 20px;
-      text-align: center;
-    }
+    <!-- Feature 2 -->
+    <div class="feature-box feature-top-right">
+      <h4>Insurance Expertise</h4>
+      <p>Navigate complex payer requirements, including Medicare Part B.</p>
+    </div>
 
-    #solution h2 {
-      font-size: 2rem;
-      text-transform: uppercase;
-      margin-bottom: 40px;
-      color: #303030;
-    }
+    <!-- Central Image -->
+    <div class="central-image">
+      <img src="assets/img/solutions3.jpg" alt="Central Solution Image">
+    </div>
 
-    /* Grid Layout for Features */
-    .solution-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      gap: 10px; /* Reduced gap between elements */
-      justify-items: center;
-      align-items: center;
-      position: relative;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+    <!-- Feature 3 -->
+    <div class="feature-box feature-bottom-left">
+      <h4>Enhanced Patient Care</h4>
+      <p>Improve adherence and outcomes with immediate medication access.</p>
+    </div>
 
-    /* Central Image in the Grid *
-    .central-image {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3;
-      position: relative;
-      width: 200px;
-      height: 200px;
-    }
-
-    .central-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-*/
-    
-  .central-image {
-    grid-column: 2 / 3; /* Centers it horizontally in the grid */
-    grid-row: 2 / 3; /* Centers it vertically in the grid */
-    position: relative;
-    width: 400px; /* Increased width */
-    height: 400px; /* Increased height */
-    display: flex; /* Ensures proper alignment */
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* Centers it for non-grid fallback scenarios */
-  }
-
-  .central-image img {
-    width: 100%; /* Ensures image fits within the container */
-    height: 100%; /* Ensures the image matches the container height */
-    border-radius: 50%; /* Keeps the circular shape */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for emphasis */
-    object-fit: cover; /* Ensures the image retains proper aspect ratio */
-  }
-
-
-    /* Feature Boxes Around the Circle */
-    .feature-box {
-      max-width: 200px; /* Reduced width for tighter layout */
-      text-align: center;
-      padding: 15px; /* Adjusted padding for compactness */
-      background: #fff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-    }
-
-    /* Assign Positions to Each Feature Box */
-    .feature-top-left {
-      grid-column: 1 / 2;
-      grid-row: 1 / 2;
-    }
-
-    .feature-top-right {
-      grid-column: 3 / 4;
-      grid-row: 1 / 2;
-    }
-
-    .feature-bottom-left {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4;
-    }
-
-    .feature-bottom-right {
-      grid-column: 3 / 4;
-      grid-row: 3 / 4;
-    }
-
-    .feature-box h4 {
-      font-size: 1.1rem;
-      color: #201f22;
-      margin-bottom: 8px; /* Reduced margin for tighter content */
-    }
-
-    .feature-box p {
-      font-size: 0.95rem;
-      color: #565558;
-      line-height: 1.4;
-    }
-
-    /* Responsive Design */
-    @media screen and (max-width: 1024px) {
-      .solution-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-      }
-
-      .feature-box {
-        margin-bottom: 20px;
-      }
-
-      .central-image {
-        margin: 20px auto;
-        width: 250px;
-        height: 250px;
-      }
-    }
-
-    @media screen and (max-width: 768px) {
-      #solution h2 {
-        font-size: 1.8rem;
-      }
-
-      .feature-box h4 {
-        font-size: 1rem;
-      }
-
-      .feature-box p {
-        font-size: 0.9rem;
-      }
-
-      .central-image {
-        width: 200px;
-        height: 200px;
-      }
-    }
-
-    @media screen and (max-width: 480px) {
-      #solution h2 {
-        font-size: 1.5rem;
-      }
-
-      .feature-box {
-        padding: 10px; /* Further reduced padding for small screens */
-      }
-
-      .feature-box h4 {
-        font-size: 0.9rem;
-      }
-
-      .feature-box p {
-        font-size: 0.8rem;
-      }
-
-      .central-image {
-        width: 150px;
-        height: 150px;
-      }
-    }
-
-      /* Feature Boxes with Rectangular Design */
-  .feature-box {
-    width: 100%; /* Allows responsiveness */
-    max-width: 300px; /* Adjust the maximum width */
-    min-height: 120px; /* Adds height to create a rectangular shape */
-    text-align: center;
-    padding: 20px 15px; /* Extra padding for content */
-    background: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px; /* Soft rounded corners */
-  }
-
-  .feature-box h4 {
-    font-size: 1.2rem;
-    color: #201f22;
-    margin-bottom: 8px; /* Reduced spacing */
-  }
-
-  .feature-box p {
-    font-size: 1rem;
-    color: #565558;
-    line-height: 1.4;
-  }
-
-  /* Adjustments for Responsive Design */
-  @media screen and (max-width: 768px) {
-    .feature-box {
-      max-width: 90%; /* Ensures the boxes resize on smaller screens */
-      min-height: auto; /* Removes height restriction */
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    .feature-box {
-      padding: 15px; /* Adjust padding for smaller screens */
-    }
-
-    .feature-box h4 {
-      font-size: 1rem;
-    }
-
-    .feature-box p {
-      font-size: 0.9rem;
-    }
-  }
-  </style>
-
-<style>
-  /* General Styling */
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #edf1f5;
-    color: #303030;
-    
-  }
-
+    <!-- Feature 4 -->
+    <div class="feature-box feature-bottom-right">
+      <h4>Streamlined In-Office Dispensing</h4>
+      <p>Ensure patients receive medications conveniently without delays, reducing barriers to adherence.</p>
+    </div>
+  </div>
+</section>
+<style>/* General Section Styling */
   #solution {
     background-color: #edf1f5;
     padding: 50px 20px;
     text-align: center;
-    height: 1244px;
   }
-
+  
   #solution h2 {
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 40px;
     color: #303030;
   }
-
-  /* Grid Layout for Central Image and Features */
+  
+  /* Grid Layout for Features */
   .solution-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: auto; /* Adjust automatically for rows */
+    gap: 40px; /* Space between grid items */
     justify-items: center;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
   }
-
+  
   /* Central Image */
   .central-image {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-column: 2 / 3; /* Center the image horizontally */
+    grid-row: 1 / 3; /* Span two rows vertically */
     position: relative;
-    width: 400px;
-    height: 400px;
-    margin: 0 auto;
+    width: 300px;
+    height: 300px;
   }
-
+  
   .central-image img {
     width: 100%;
     height: 100%;
@@ -694,183 +491,86 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     object-fit: cover;
   }
-
+  
   /* Feature Boxes */
   .feature-box {
-    width: 100%;
-    max-width: 300px;
-    min-height: 120px;
+    max-width: 280px;
     text-align: center;
     padding: 20px;
     background: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
-
+  
   .feature-box h4 {
     font-size: 1.2rem;
     color: #201f22;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
-
+  
   .feature-box p {
     font-size: 1rem;
     color: #565558;
-    line-height: 1.4;
+    line-height: 1.5;
   }
-
+  
   /* Responsive Design */
   @media screen and (max-width: 1024px) {
     .solution-grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr; /* Two columns */
+      grid-template-rows: auto; /* Adjust rows automatically */
+      gap: 30px;
     }
-
+  
     .central-image {
+      grid-column: 1 / 3; /* Span both columns */
+      grid-row: 2 / 3; /* Place below the first row */
       width: 250px;
       height: 250px;
     }
-
+  
     .feature-box {
       max-width: 90%;
-      margin-bottom: 20px;
     }
   }
-
+  
   @media screen and (max-width: 768px) {
-    #solution {
-      height: 833px;
-      padding: 50px 20px;
+    .solution-grid {
+      grid-template-columns: 1fr; /* Single column */
+      gap: 20px;
     }
-    #solution h2 {
-      font-size: 1.8rem;
-    }
-
+  
     .central-image {
+      grid-column: 1 / 2; /* Single column layout */
+      grid-row: auto;
       width: 200px;
       height: 200px;
     }
-
+  
     .feature-box {
-      padding: 15px;
-    }
-
-    .feature-box h4 {
-      font-size: 1rem;
-    }
-
-    .feature-box p {
-      font-size: 0.9rem;
+      max-width: 100%; /* Full width for smaller screens */
     }
   }
-/*
+  
   @media screen and (max-width: 480px) {
-    #solution {
-      height: 800px;
-      padding: 50px 20px;
-    }
     #solution h2 {
       font-size: 1.5rem;
+      margin-bottom: 20px;
     }
-
+  
     .central-image {
       width: 150px;
       height: 150px;
     }
-
+  
     .feature-box {
-      padding: 10px;
-    }
-
-    .feature-box h4 {
+      padding: 15px;
       font-size: 0.9rem;
     }
-
-    .feature-box p {
-      font-size: 0.8rem;
-    }
-
-
   }
+  </style>
 
-  */
-    /*new 480*/
-    @media screen and (max-width: 480px) {
-  #solution {
-    padding: 20px;
-  }
-
-  #solution h2 {
-    font-size: 1.4rem;
-    margin-bottom: 20px; /* Reduce margin for smaller screens */
-  }
-
-  .solution-grid {
-    grid-template-columns: 1fr; /* Stack all items vertically */
-    grid-template-rows: auto;
-    gap: 15px; /* Add spacing between elements */
-  }
-
-  .central-image {
-    width: 180px; /* Adjust size for smaller screens */
-    height: 180px;
-    margin: 0 auto; /* Center the image */
-  }
-
-  .feature-box {
-    width: 90%; /* Reduce width to fit smaller screens */
-    margin: 0 auto; /* Center the feature boxes */
-    padding: 15px; /* Adjust padding for better fit */
-  }
-
-  .feature-box h4 {
-    font-size: 1rem; /* Adjust text size */
-  }
-
-  .feature-box p {
-    font-size: 0.85rem; /* Slightly smaller text */
-    line-height: 1.3; /* Improve readability */
-  }
-}
-
-  
-</style>
-
-
-  <section id="solution">
-    <h2>The EssentialRx Solution: Streamlining Care</h2>
-    <div class="solution-grid">
-      <!-- Feature 1 -->
-      <div class="feature-box feature-top-left" style="margin-bottom: -55px;">
-        <h4>Workflow Automation</h4>
-        <p>Automate processes to save time and reduce errors.</p>
-      </div>
-
-      <!-- Feature 2 -->
-      <div class="feature-box feature-top-right" style="margin-bottom: -55px;">
-        <h4>Insurance Expertise</h4>
-        <p>Navigate complex payer requirements, including Medicare Part B.</p>
-      </div>
-
-      <!-- Central Image -->
-      <div class="central-image">
-        <img src="assets/img/solutions3.jpg"  alt="Central Solution Image">
-      </div>
-
-      <!-- Feature 3 -->
-      <div class="feature-box feature-bottom-left" style="margin-top: -55px;">
-        <h4>Enhanced Patient Care</h4>
-        <p>Improve adherence and outcomes with immediate medication access.</p>
-      </div>
-
-      <!-- Feature 4 -->
-      <div class="feature-box feature-bottom-right" style="margin-top: -55px;">
-        <h4>Streamlined In-Office Dispensing</h4>
-        <p>Ensure patients receive medications conveniently without delays, reducing barriers to adherence.</p>
-      </div>
-    </div>
-  </section>
-
+<!--end solutions -->
 
 
 <style>
